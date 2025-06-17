@@ -1,0 +1,253 @@
+/*=========*/
+/* GENERAL */
+/*=========*/
+
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: white;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.background{
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/portfoglio-background2.jpg");
+	background-size: cover;
+}
+.blur {
+	background: rgba(255, 255, 255, 0.2);
+	display:block;
+	height: 100%;
+}
+main{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.hello{
+	font-family: "Festive", Arial, Helvetica, sans-serif;
+	line-height: 50px;
+	font-size: 65px;
+	font-style: italic;
+	height: 20%;
+}
+/* ========= */
+/*END GENERAL*/
+/* ========= */
+
+/* ========= */
+/*    MENU   */
+/* ========= */
+.topnav {
+	overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: none;
+	color: black;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+	float: right;
+}
+
+/*=========*/
+/*END MENU*/
+/*=========*/
+
+.profile-img{
+	border-radius: 50%;
+	width: 180px;
+	height: 150px;
+}
+
+.about-section{
+	padding-right: 150px;
+	padding-left: 150px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/*=========*/
+/* FLEXBOX */
+/*=========*/
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+	align-content: center;
+	height:50%;
+}
+.project-box{
+	flex-grow:4;
+	height: 0;
+}
+.contact-box{
+	flex-grow:4;
+}
+.project-title{
+	text-decoration: none;
+	color: #ffffff;
+}
+.project-title:hover{
+	color: #BDB76B;
+}
+.project-description{
+	font-size: 20px;
+}
+/*=========*/
+/* END FLEXBOX */
+/*=========*/
+
+/*=========*/
+/* FONT AWESOME ICONS */
+/*=========*/
+
+.fa{
+	padding: 10px;
+	font-size: 90px !important;
+	text-decoration: none;
+}
+.fa:hover {
+	opacity: 0.7;
+}
+/* END FONT AWESOME ICONS */
+
+/* MEDIA QUERIES */
+/* @media only screen and (max-width: 950px) { */
+/* 	a#dog_fight{ */
+		/* pointer-events:none; */
+	/* } */
+/* } */
+@media only screen and (max-width: 750px) {
+	.background{
+		width: 100%;		
+		height: 100%;		
+	}
+	.flex-container{
+		flex-direction: column;
+		align-content: center;
+	}
+	.system-stockage-container{
+		flex-direction: column;
+		align-content:center;
+	}
+	.project-box{
+		padding: 39px;
+	}
+	.about-section{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.hello{
+		font-size:35px;
+		height:10%;
+	}
+	#portfolio-title{
+		display:none;
+	}
+	.profile-img{
+		width:100px;
+		height:100px;
+	}
+	main{
+		width: 100%;
+		height: 50%;
+		position: none;
+		top:none;
+		bottom: none;
+		left: none;
+		right: none;
+		margin: none;
+	}
+	.fa{
+		padding:10px;
+		font-size: 50px !important;
+	}
+	.project-description{
+		display:none;
+	}
+}
+
+/*=========*/
+/*Skills page*/
+/*=========*/
+.system-stockage-container{ 
+	text-align:left;
+	display: flex; 
+	padding-top:5%;
+	flex-flow: column-wrap; 
+	justify-content: center; 
+	align-content: space-evenly; 
+	gap: 5%;
+}
+.empty-space{
+	height:10px;
+}
+.progress-bar{
+	/* border:3px solid black; */ 
+	/* border-radius:10px; */
+}
+.my-skill-level{
+	border-radius:10px;
+	height:5px;
+}
+.li-without-style{
+	list-style:none;
+}
+li{
+	list-style: square;
+}
+em{
+	font-weight: bold; font-style: normal;
+}
+.center{
+	text-align:center;
+}
+.italic{
+	font-style:italic;
+}
+.red{
+	background-color:crimson;
+}
+.green{
+	background-color:DarkCyan;
+}
+.blue{
+	/* background-color:darkcyan; */
+	/* background-color:lightsteelblue; */
+	background-color:darkslateblue;
+}
+
+/* Adapt to smaller devices */
+@media only screen and (max-width: 200px) {
+	.profile-img{
+		width:50px;
+		height:50px;
+		padding-top:35%;
+	}
+	.hello{
+		font-size:20px;
+		line-height:20px;
+	}
+	.flex-container{
+		padding-top:40%;
+	}
+}
