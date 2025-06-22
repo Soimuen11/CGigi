@@ -17,3 +17,6 @@ en attente de gigi pour ses images de produits pour ajouter à la page catalogue
 
 4
 en attente de gigi pour obtention d'une belle image à mettre en background
+
+5
+penser à ajouter ©Copyright CGigi 2025 in the footer
