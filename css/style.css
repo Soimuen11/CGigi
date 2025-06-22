@@ -10,6 +10,16 @@ html,body{
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
+main{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
 .background{
 	width: 100%;
 	height: 100%;
@@ -21,21 +31,19 @@ html,body{
 	display:block;
 	height: 100%;
 }
-main{
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	top:0;
-	bottom: 0;
+footer{
+	position: fixed;
 	left: 0;
-	right: 0;
-	margin: auto;
+	bottom: 0;
+	height:20%;
+	width: 100%;
+	text-align: center;
 }
 .hello{
-	font-family: "Festive", Arial, Helvetica, sans-serif;
 	line-height: 50px;
 	font-size: 65px;
 	font-style: italic;
+	margin:0;
 	height: 20%;
 }
 /* ========= */
@@ -77,13 +85,6 @@ main{
 	height: 150px;
 }
 
-.about-section{
-	padding-right: 150px;
-	padding-left: 150px;
-	text-align: justify;
-	text-justify: inter-word;
-}
-
 /*=========*/
 /* FLEXBOX */
 /*=========*/
@@ -93,24 +94,10 @@ main{
 	flex-direction: row;
 	align-items: center;	
 	align-content: center;
-	height:50%;
-}
-.project-box{
-	flex-grow:4;
-	height: 0;
 }
 .contact-box{
-	flex-grow:4;
-}
-.project-title{
-	text-decoration: none;
-	color: #ffffff;
-}
-.project-title:hover{
-	color: #BDB76B;
-}
-.project-description{
-	font-size: 20px;
+	flex-grow:1;
+	align-self:center;
 }
 /*=========*/
 /* END FLEXBOX */
@@ -121,8 +108,9 @@ main{
 /*=========*/
 
 .fa{
-	padding: 10px;
-	font-size: 90px !important;
+	/* padding: 10px; */
+	padding: 0px;
+	font-size: 50px !important;
 	text-decoration: none;
 }
 .fa:hover {
@@ -131,26 +119,18 @@ main{
 /* END FONT AWESOME ICONS */
 
 /* MEDIA QUERIES */
-/* @media only screen and (max-width: 950px) { */
-/* 	a#dog_fight{ */
-		/* pointer-events:none; */
-	/* } */
-/* } */
 @media only screen and (max-width: 750px) {
 	.background{
 		width: 100%;		
 		height: 100%;		
 	}
 	.flex-container{
-		flex-direction: column;
+		/* flex-direction: column; */
 		align-content: center;
 	}
 	.system-stockage-container{
 		flex-direction: column;
 		align-content:center;
-	}
-	.project-box{
-		padding: 39px;
 	}
 	.about-section{
 		padding-right: 10px;
@@ -181,33 +161,13 @@ main{
 		padding:10px;
 		font-size: 50px !important;
 	}
-	.project-description{
-		display:none;
-	}
 }
 
 /*=========*/
-/*Skills page*/
+/*GENERAL*/
 /*=========*/
-.system-stockage-container{ 
-	text-align:left;
-	display: flex; 
-	padding-top:5%;
-	flex-flow: column-wrap; 
-	justify-content: center; 
-	align-content: space-evenly; 
-	gap: 5%;
-}
 .empty-space{
 	height:10px;
-}
-.progress-bar{
-	/* border:3px solid black; */ 
-	/* border-radius:10px; */
-}
-.my-skill-level{
-	border-radius:10px;
-	height:5px;
 }
 .li-without-style{
 	list-style:none;
@@ -231,8 +191,6 @@ em{
 	background-color:DarkCyan;
 }
 .blue{
-	/* background-color:darkcyan; */
-	/* background-color:lightsteelblue; */
 	background-color:darkslateblue;
 }
 
