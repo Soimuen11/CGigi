@@ -23,11 +23,14 @@ main{
 .background{
 	width: 100%;
 	height: 100%;
-	background-image: url("../img/pexels-garrettmorrow-696618.jpg");
+	background-image: url("../img/background1.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 .blur {
-	background: rgba(255, 255, 255, 0.2);
+	/* background: rgba(255, 255, 255, 0.2); */
+	background: rgba(255, 255, 255, 0.1);
 	display:block;
 	height: 100%;
 }
@@ -40,8 +43,10 @@ footer{
 	text-align: center;
 }
 .hello{
+	font-family: "Festive", Arial, Helvetica, sans-serif;
 	line-height: 50px;
-	font-size: 65px;
+	/* font-size: 65px; */
+	font-size: 80px;
 	font-style: italic;
 	margin:0;
 	height: 20%;
@@ -91,7 +96,7 @@ footer{
 
 .flex-container{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;	
 	align-content: center;
 }
@@ -137,7 +142,8 @@ footer{
 		padding-left: 10px;
 	}
 	.hello{
-		font-size:35px;
+		/* font-size:35px; */
+		font-size:50px;
 		height:10%;
 	}
 	#portfolio-title{
