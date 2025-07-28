@@ -168,10 +168,18 @@ footer{
 /* FONT AWESOME ICONS */
 /*=========*/
 
+.social_icon{
+	padding:7px; 
+	border: 2px solid white; 
+	border-radius:50%;
+	width:45px;
+	height:45px;
+	margin-right:10px;
+}
 .fa{
 	/* padding: 10px; */
-	padding: 0px;
-	font-size: 50px !important;
+	/* padding: 0px; */
+	font-size: 45px !important;
 	text-decoration: none;
 }
 .fa:hover {
