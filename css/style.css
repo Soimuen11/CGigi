@@ -125,7 +125,7 @@ footer{
 .flex-container{
 	display: flex;
 	flex-direction: column;
-	align-items: center;	
+	align-items: center;
 	align-content: center;
 }
 .contact-box{
@@ -166,8 +166,8 @@ footer{
 /*=========*/
 
 .social_icon{
-	padding:7px; 
-	border: 2px solid white; 
+	padding:7px;
+	border: 2px solid white;
 	border-radius:50%;
 	width:45px;
 	height:45px;
@@ -186,8 +186,8 @@ footer{
 /* MEDIA QUERIES */
 @media only screen and (max-width: 750px) {
 	.background{
-		width: 100%;		
-		height: 100%;		
+		width: 100%;
+		height: 100%;
 	}
 	.flex-container{
 		align-content: center;
@@ -258,22 +258,94 @@ em{
 	background-color:darkslateblue;
 }
 
+@media only screen and (max-width: 1400px) {
+	footer{
+		height:14%;
+	}
+	.social_icon{
+		padding:5px;
+		border: 2px solid white;
+		border-radius:50%;
+		width:35px;
+		height:35px;
+		margin-top:35px;
+		margin-right:10px;
+	}
+	.fa{
+		font-size:35px!important;
+	}
+}
+
+@media only screen and (max-width: 1389px) {
+	footer{
+		margin-top:5%;
+	}
+}
+
 @media only screen and (max-width: 1340px) {
 	.events_flex_container{
 		flex-direction:column;
 	}
 }
-
-@media only screen and (max-width: 1065px) {
-	/* footer{ */
-	/* 	position:fixed; */
-	/* } */
+@media only screen and (max-width: 1315px) {
+	footer{
+		margin-top:8%;
+	}
 }
 
-@media only screen and (max-width: 400px) {
-	.social_icon{
-		margin-top:30px;
+@media only screen and (max-width: 1175px) {
+	footer{
+		margin-top:10%;
 	}
+}
+
+@media only screen and (max-width: 1129px) {
+	footer{
+		margin-top:13%;
+	}
+}
+
+@media only screen and (max-width: 1065px) {
+	footer{
+		margin-top:15%;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	footer{
+		margin-top:200px;
+	}
+}
+
+@media only screen and (max-width: 1065px) {
+	footer{
+		position:fixed;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	footer{
+		height:10%;
+	}
+	.social_icon{
+		padding:5px;
+		border: 2px solid white;
+		border-radius:50%;
+		width:20px;
+		height:20px;
+		margin-top:25px;
+		margin-right:10px;
+	}
+	.fa{
+		font-size:20px!important;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.social_icon{
+		margin-top:20px;
+	}
+}
 
 /* Adapt to smaller devices */
 @media only screen and (max-width: 200px) {
