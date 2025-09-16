@@ -7,6 +7,16 @@
 		<link rel="icon" href="../img/cgigi_logo_general.png">
 		<title>C'Gigi</title>
 
+		<!-- Open Graph Protocol meta tags -->
+		<meta property="og:title" content="C'Gigi">
+		<meta property="og:site_name" content="C'Gigi">
+		<meta property="og:description" content="Ciao ! Moi, c'est Gigi ! Découvrez nos services pour mariages, baptèmes, soirées business, et autres événements.">
+		<meta property="og:image" content="https://cgigi.fr/img/cgigi_icon3.png">
+		<meta property="og:url" content="https://cgigi.fr/services.html">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="fr_FR">
+		<!-- End Open Graph Protocol meta tags -->
+
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,44 +24,60 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- End Google Fonts -->
 	</head>
-	</head>
 	<body style="background:#F5F5DC">
 		<div class="services_background">
 				<header class="menu">
-					<div class="topnav services_topnav">
-						<a href="../index.html" style="padding:0; margin:auto;"><img src="../img/cgigi_icon3.png" alt="profile image" style="padding:0px; width:40px; height:40px; margin-right:10px;"></a>
-						<a href="mailto:gianluigicapizzi@hotmail.it?subject=CGigi – Demande de devis&body=Bonjour, je suis [prenom] [nom] de l'entreprise [nom de l'entreprise]  et j'aurais besoin d'un devis pour [votre raison]." class="devis_btn">Demande de devis</a>
+					<!-- burger menu test -->
+					<input type="checkbox" id="burger-toggle" class="burger-toggle">
+					<label for="burger-toggle" class="burger-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+
+					<div class="topnav services_topnav burger-menu">
+						<a href="../index.html" style="padding:0; margin:auto;"><img src="../img/cgigi_icon3.png" alt="Logo Cgigi" class="menu-logo" style="padding:0px;width:40px;height:40px;margin-right:10px;"></a>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSccdFGN_DcbVsD9xRyJbE38CU_tM5xl8EjMnGdfPhuxkSuDqg/viewform?usp=dialog" class="devis_btn">Demande de devis</a>
 						<div class="topnav-right">
 							<a href="../index.html#anchor_apropos_h1">À propos</a>
-							<a href="#">Services</a>
+							<a href="./services.html">Services</a>
 						</div>
 					</div>
+					<!-- end burger menu test -->
+
+					<!-- <div class="topnav services_topnav"> -->
+					<!-- 	<a href="../index.html" style="padding:0; margin:auto;"><img src="../img/cgigi_icon3.png" alt="Logo Cgigi" style="padding:0px; width:40px; height:40px; margin-right:10px;"></a> -->
+					<!-- 	<a href="https://docs.google.com/forms/d/e/1FAIpQLSccdFGN_DcbVsD9xRyJbE38CU_tM5xl8EjMnGdfPhuxkSuDqg/viewform?usp=dialog" class="devis_btn">Demande de devis</a> -->
+					<!-- 	<div class="topnav-right"> -->
+					<!-- 		<a href="../index.html#anchor_apropos_h1">À propos</a> -->
+					<!-- 		<a href="#">Services</a> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
 				</header>
 				<main class="services_main">
-					<img src="../img/cgigi_icon.png" alt="profile image" class="profile-img">
+					<img src="../img/cgigi_icon.png" alt="Logo services CGigi" class="profile-img">
 					<h1 id="service_h1">Services</h1>
-					<div class="events_flex_container"> 
-						<div class="event-box"> 
+					<div class="events_flex_container">
+						<div class="event-box">
 							<a href="#">
-								<p>Mariages, Baptèmes</p>
-								<img class="box-img" src="../img/background3.jpeg" alt="mariages, baptèmes">
-							</a> 
-						</div> 
-						<div class="event-box"> 
+								<h4 class="event-title-type">Mariages & Cérémonies</h4>
+								<img class="box-img" src="../img/background3.jpeg" alt="Décoration d'un mariage ou baptême organisé par C'Gigi">
+							</a>
+						</div>
+						<div class="event-box">
 							<a href="#">
-								<p>Soirées Business</p>
-								<img class="box-img" src="../img/imm_matrim_2.jpg" alt="soirées business">
-							</a> 
-						</div> 
-						<div class="event-box"> 
+								<h4 class="event-title-type">Soirées Business</h4>
+								<img class="box-img" src="../img/imm_matrim_2.jpg" alt="Soirée business professionnelle organisée par C'Gigi">
+							</a>
+						</div>
+						<div class="event-box">
 							<a href="#">
-								<p>Autres événements</p>
-								<img class="box-img" src="../img/imm_matrim_3.jpg" alt="Autres événements">
-							</a> 
-						</div> 
-					</div> 
+								<h4 class="event-title-type">Autres événements</h4>
+								<img class="box-img" src="../img/imm_matrim_3.jpg" alt="Autres événements festifs pris en charge par C'Gigi">
+							</a>
+						</div>
+					</div>
 				</main>
-				<!-- <footer class="flex-container fixed" style="background-color:#000000"> -->
 				<footer class="flex-container" style="background-color:#000000">
 					<div class="contact-box">
 						<a href="info.cgigi@gmail.com" target="_blank" rel="noopener noreferrer" class="fa fa-envelope social_icon" style="color: #ffffff;"></a>
