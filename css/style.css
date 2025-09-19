@@ -127,8 +127,7 @@ footer{
 }
 .event-box{
 	border-radius:5%;
-	font-size: 20px;
-	padding:5px;
+	padding:20px;
 	margin-left:10px;
 	margin-right:10px;
 	flex-grow:1;
@@ -271,7 +270,7 @@ em{
 }
 
 
-/* burger menu test */
+/* burger menu */
 /* Burger toggle button */
 .burger-toggle {
   display: none;
@@ -328,3 +327,53 @@ em{
   }
 }
 /* end burger menu test */
+
+/* flipping cards */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 10px auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 5%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg) scaleX(0.9);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #910f3f;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px;
+  margin:auto;
+  text-align:center;
+}
+/* end flipping cards style */
