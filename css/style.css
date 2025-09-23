@@ -97,6 +97,9 @@ footer{
 	padding-bottom:16px;
 	font-size: 0.9375rem;
 }
+/* .devis_btn:hover{ */
+/* 	color:yellow; */
+/* } */
 
 /*=========*/
 /*END MENU*/
@@ -367,6 +370,9 @@ em{
 	.fa{
 		padding:10px;
 		font-size: 20px !important;
+	}
+	footer{
+		min-height:200px;
 	}
 }
 @media only screen and (max-width: 410px) {
